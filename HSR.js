@@ -1,28 +1,17 @@
 <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-        }
-
-        function searchItems() {
-            let input = document.getElementById("searchBar").value.toLowerCase();
-            let lists = document.querySelectorAll("ul li");
-
-            lists.forEach(item => {
-                let text = item.innerText.toLowerCase();
-                if (text.includes(input)) {
-                    item.style.display = "flex";
-                } else {
-                    item.style.display = "none";
-                }
+        window.onload = function() {
+            // Dynamically adjust image size for better layout
+            let images = document.querySelectorAll("li img");
+            images.forEach(function(img) {
+                img.style.width = "200px"; // Set all images to a consistent size
+                img.style.height = "200px";
+                img.style.objectFit = "cover"; // Ensures proper image cropping
             });
-        }
 
-        function toggleSection(sectionId) {
-            let section = document.getElementById(sectionId);
-            if (section.style.display === "none" || section.style.display === "") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
+            // Adjust spacing if needed
+            let listItems = document.querySelectorAll("li");
+            listItems.forEach(function(item) {
+                item.style.marginBottom = "20px"; // Add space between list items
+            });
         }
     </script>
