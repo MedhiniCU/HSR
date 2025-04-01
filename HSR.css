@@ -1,4 +1,5 @@
-   body {
+<style>
+body {
             font-family: Arial, sans-serif;
             background: linear-gradient(120deg, #f4f4f4, #d9e6f2);
             text-align: center;
@@ -22,7 +23,7 @@
             padding: 15px;
             background: #f9f9f9;
             border-radius: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 30px; /* Add space between sections */
         }
         ul {
             padding: 0;
@@ -30,7 +31,7 @@
         }
         li {
             display: block;
-            margin: 20px 0;
+            margin: 15px 0; /* Add space between each item */
             background: white;
             padding: 10px;
             border-radius: 5px;
@@ -42,7 +43,7 @@
             display: block;
             margin-bottom: 15px; /* Add space between image and text */
             margin-left: auto;
-            margin-right: auto;
+            margin-right: auto; /* Center-align the images */
         }
         .dark-mode {
             background: #222;
@@ -58,3 +59,4 @@
                 align-items: flex-start;
             }
         }
+</style>
