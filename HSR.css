@@ -2,13 +2,12 @@
 body {
             font-family: Arial, sans-serif;
             background: linear-gradient(120deg, #f4f4f4, #d9e6f2);
-            text-align: center;
             margin: 0;
             padding: 20px;
         }
         .container {
             background: white;
-            max-width: 100px;
+            max-width: 900px;
             margin: auto;
             padding: 25px;
             border-radius: 15px;
@@ -23,31 +22,26 @@ body {
             padding: 15px;
             background: #f9f9f9;
             border-radius: 10px;
-            margin-bottom: 10px; /* Add space between sections */
+            margin-bottom: 30px; /* Space between sections */
         }
         ul {
             padding: 0;
             list-style-type: none;
         }
         li {
-            display: block;
-            margin: 10px 0; /* Add space between each item */
+            display: flex;
+            align-items: center;
+            margin: 15px 0; /* Gap between each item */
             background: white;
-            padding: 10px;
+            padding: 15px;
             border-radius: 5px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
         li img {
-            width: 20px; /* Control the image size */
-            height: auto;
-            display: block;
-            margin-bottom: 5px; /* Add space between image and text */
-            margin-left: auto;
-            margin-right: auto; /* Center-align the images */
-        }
-        .dark-mode {
-            background: #222;
-            color: white;
+            width: 300px; /* Fixed width for passport-size image */
+            height: 400px; /* Fixed height for passport-size image */
+            object-fit: cover; /* Ensures image is cropped and fits in box */
+            margin-right: 15px; /* Space between image and text */
         }
         @media (max-width: 600px) {
             .container {
