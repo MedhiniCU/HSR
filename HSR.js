@@ -3,8 +3,8 @@
             // Dynamically adjust image size for better layout
             let images = document.querySelectorAll("li img");
             images.forEach(function(img) {
-                img.style.width = "200px"; // Set all images to a consistent size
-                img.style.height = "200px";
+                img.style.width = "150px"; // Set all images to a consistent size
+                img.style.height = "150px";
                 img.style.objectFit = "cover"; // Ensures proper image cropping
             });
 
