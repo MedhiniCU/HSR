@@ -13,6 +13,7 @@ body {
             border-radius: 15px;
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
             text-align: left;
+            gap: 15px;
         }
         h1, h2 {
             color: #333;
@@ -30,18 +31,21 @@ body {
         }
         li {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin: 15px 0; /* Gap between each item */
             background: white;
+            gap: 15px;
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
         li img {
-            width: 30px; /* Fixed width for passport-size image */
-            height: 40px; /* Fixed height for passport-size image */
+            width: 300px; /* Fixed width for passport-size image */
+            height: 400px; /* Fixed height for passport-size image */
             object-fit: cover; /* Ensures image is cropped and fits in box */
             margin-right: 5px; /* Space between image and text */
+            gap: 15px;
         }
         @media (max-width: 600px) {
             .container {
