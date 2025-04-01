@@ -22,7 +22,7 @@ body {
             padding: 15px;
             background: #f9f9f9;
             border-radius: 10px;
-            margin-bottom: 30px; /* Space between sections */
+            margin-bottom: 15px; /* Space between sections */
         }
         ul {
             padding: 0;
@@ -38,10 +38,10 @@ body {
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
         li img {
-            width: 300px; /* Fixed width for passport-size image */
-            height: 400px; /* Fixed height for passport-size image */
+            width: 30px; /* Fixed width for passport-size image */
+            height: 40px; /* Fixed height for passport-size image */
             object-fit: cover; /* Ensures image is cropped and fits in box */
-            margin-right: 15px; /* Space between image and text */
+            margin-right: 5px; /* Space between image and text */
         }
         @media (max-width: 600px) {
             .container {
