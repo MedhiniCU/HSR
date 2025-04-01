@@ -47,6 +47,14 @@ body {
             margin-right: 5px; /* Space between image and text */
             gap: 15px;
         }
+       li p {
+            flex: 1;
+        }
+        .passport-size {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
         @media (max-width: 600px) {
             .container {
                 width: 90%;
